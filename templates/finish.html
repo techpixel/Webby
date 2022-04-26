@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Finished!</title>
+    <link rel='stylesheet' type='text/css' href={{ url_for('static', filename='index.css') }}>
+  </head>
+  <body style="width:800px; margin:0 auto">
+    <div id='finishcenter'>
+      <h1>Finished!</h1>
+      <p>Congrats! You've built a website!</p>
+      <p>Your Website's Unique ID(use it to go to your website):{{ uuid }}<br>
+      Example: <code>https://webbyondaweb.harperframeinc/view/exampleID</code></p><br>
+      <p>Password(keep it secret!!!):{{ passw }}</p>
+      <br><p>Next Up: Edit your page at https://webbyondaweb.harperframeinc/dashboard/exampleID</p>
+    </div>
+  </body>

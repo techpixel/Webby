@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get Started</title>
+    <link rel='stylesheet' type='text/css' href={{ url_for('static', filename='index.css') }}>
+  </head>
+  <body style="width:800px; margin:0 auto">
+    <div id='center'>
+      <h1>Get Started</h1>
+      <p>Build an Amazing Website in just minutes.</p>
+      <form action='/create' method='post'>
+        <input type="text" placeholder="Example" name="title" autocomplete="off"> <br>
+        <input type="color" placeholder="#aa00ff" name="color">  <br>
+        <input type="submit" value="Create">
+      </form>
+    </div>
+  </body>

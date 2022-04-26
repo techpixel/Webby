@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+body {
+  height: 100%;
+  margin: auto;
+  
+  background-image: url('https://images.unsplash.com/photo-1595933188652-b511e433c802?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+
+  background-color: blue;
+}
+
+#center {
+  background-color: white;
+  padding: 30px;
+
+  width: 400px;
+  height: 300px;
+
+  margin: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#finishcenter {
+  background-color: white;
+  padding: 30px;
+
+  width: 500px;
+  height: 400px;
+
+  margin: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+h1 {
+  font-family: 'Recursive', 'sans-serf';
+}
+p {
+  font-family: 'Recursive', 'sans-serf'
+}
+input[type=text] {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 3px solid rgb(37, 37, 37);
+  padding: 5px;
+  margin: 5px;
+  transition: 0.5s border-bottom;
+  -webkit-transition: 0.5s border-bottom;
+}
+input[type=text]:focus {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 3px solid rgb(129, 75, 255);
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+}
+input[type=color] {
+  border-style: none;
+  border-radius: 5px;
+
+  color: white;
+  background-color: black;
+
+  padding: 10px;
+  margin: 5px;
+  margin-top: 20px;
+
+  width: 100px;
+
+  transition: 0.5s background-color;
+}
+input[type=color]:hover {
+  color: white;
+  background-color:rgb(129, 75, 255);
+}
+
+input[type=submit] {
+  border-style: none;
+  border-radius: 5px;
+
+  color: white;
+  background-color: black;
+
+  padding: 10px;
+  margin: 5px;
+  margin-top: 20px;
+
+  width: 100px;
+
+  transition: 0.5s background-color;
+}
+input[type=submit]:hover {
+  color: white;
+  background-color:rgb(129, 75, 255);
+}

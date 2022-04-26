@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='dashboard.css') }}>
+</head>
+<body>
+  <div id='wbg'>
+    <h1>Site Dashboard</h1>
+    <p>Welcome To Webby Site Dashboard. Edit the pages markdown or change the title here</p>
+    <form action='/completechanges' method="POST">
+      <label for='md'>Edit Markdown:</label>
+      <textarea name='md'>{{ md }}</textarea>
+      <label for='title'>Edit Title:</label>
+      <input type='text' id='title' name='title' value='{{ title }}'>
+      <label for='color'>Edit Color:</label>
+      <input type='color' id='color' name='color' value='{{ color }}'>
+
+      <input type='hidden' name='id' value='{{ id }}'>
+      <input type='hidden' name='pass' value='{{ passw }}'>
+
+      <input type='submit' value='Save Changes'>
+      
+    </form>
+  </div>
+</body>
